@@ -1,0 +1,61 @@
+
+{% extends 'index.html' %} 
+{% load static %}
+
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+
+    <link rel="stylesheet" type="text/css" href="{%static 'home/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css' %}" />
+    <link/>
+    
+    <header>
+    </header>
+
+
+
+<div class="col-lg-6">
+    <h3 class="resume-title">Professional Experience</h3>
+    <div class="resume-item">
+      <h4>IT PROGRAMMER</h4>
+      <h5>13/01/2020 – 28/01/2020</h5>
+      <p><em>FINA- FINANCIAL AGENCY, {{inf2.adress }} </em></p>
+      <p>
+      <ul>
+        <li>Implementation of tasks from concepts in JAVA language (inheritance, encapsulation, interfaces)</li>
+        <li>Merging and reading from a database in Java. </li>
+        <li>Creating a connection to the database through DbVisualizer</li>
+        <li>Introduction to the methods of software product development, the work of classified information and the responsibilities of the work of IT programmers
+        Information and communication   </li>
+          
+    </ul>
+      </p>
+    </div>
+    <div class="resume-item">
+      <h4>OFFICE ADMINISTRATOR</h4>
+      <h5>02/05/2019 – 01/09/2019</h5>
+      <p><em>MINISTRY OF THE INTERIOR OF THE REPUBLIC OF CROATIA , {{inf2.adress }}</em></p>
+      <p>
+      <ul>
+        <li>Work in the police system</li>
+        <li>Work with dministrative and support service activities</li>
+        <li>Work with document archiving</li>
+        <li>Work with customer relations</li>
+      </ul>
+      </p>
+    </div>
+  </div>
+</div>
+
+</div>
+</section>
+</div>
+{% endblock %}
+</footer> 
+</body>
+

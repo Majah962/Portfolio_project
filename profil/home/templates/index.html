@@ -1,0 +1,50 @@
+ {% extends 'base.html' %}   <title>{% block title %}Home{% endblock %}</title>
+{% load static %}
+
+{% block content %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+
+    
+    
+    <header> 
+      <h1 id="colorlib-logo position-fixed ">Maja Hercigonja</h1>
+      Phone: (+385) 955 7898
+      E-mail: majah9973@gmail.com
+
+    </header><!-- End Header -->
+    <header class="page-header-gradient"></header>   
+   <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                <div class="count-box2">
+                  <i class="bi bi-journal-richtextr" style="color: #8a1ac2;"></i>
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                  <p> I am currently a full-time student at a university in Slovenia and behind me I have made a couple of projects from Java 
+                    and web programming languages such as HTML/CSS, Javascript.  I am very interested in programming and the field of cybernetics and computer forensics.</p><p> I am currently learning the python programming language and the field of marketing in more detail. 
+                        When Im not in the IT field, in my free time I am most interested in fitness, I am a regular visitor to the gym and I learn 
+                        Korean language with the aim of living in Korea. </p>
+      </div>
+    </div>
+        <div class="slika">
+          <img src="{% static 'home/img/image1.jpg'%}" width="400" alt="My image"/>
+        </div>         
+    </section>
+  </body>
+<footer>
+  <section>
+    <div class="<div class="container-fluid">
+          <h3 class= "title"> </h3>
+          <p class="title2"> </p>
+      <ul>
+        <a class="btn btn-primary" href="https://www.facebook.com/maja.hercigonja.1/" role="button">Facebook</a></li>
+       <a class="btn btn-primary" href="https://www.instagram.com " role="button">Instagram</a></li>
+       <a class="btn btn-primary" href="https://www.linkedin.com/feed/" role="button">Linkedin</a></li>
+    </div>
+  </section>
+</footer> 
+  {% endblock %}
+</html>

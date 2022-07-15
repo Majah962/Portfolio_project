@@ -1,0 +1,72 @@
+
+{% extends 'index.html' %} 
+{% load static %}
+
+
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+  
+  <body>
+
+    <link rel="stylesheet" type="text/css" href="{%static 'home/css/bootstrap.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css' %}" />
+    <link/>
+    
+    <header>
+
+<section id="about" class="about">
+    <div class="container">
+
+      <div class="section-title">
+        <span></span>
+        <h2>About Me</h2><div></div>
+        <p>I'm Maja from Croatia </p>
+      </div>
+
+      <div class="row">
+        <div class="image col-lg-4 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="col-lg-8 d-flex flex-column align-items-stretch">
+          <div class="content ps-lg-4 d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-lg-7">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Name:</strong> <span>{{inf1.printname  }}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{{inf1.phone}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>{{inf1.city}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Adress:</strong> <span></span></li>
+                </ul>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{{inf1.age}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>{{inf1.degree}}</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>{{inf1.email}}</span></li>
+                </ul>
+              </div>
+            </div>
+            
+              <div class="col-md-6 mt-5 d-md-flex align-items-md-stretch">
+                <div class="count-box">
+                  <p class="tekst"><strong>More information:</strong> I am currently a full-time student at a university in Slovenia and behind me I have made a couple of projects from Java 
+                    and web programming languages such as HTML/CSS, Javascript. 
+                     I am very interested in programming and the field of cybernetics and computer forensics.</p>
+                     <p class="tekst"> I am currently learning the python programming language and the field of marketing in more detail. 
+                        When Im not in the IT field, in my free time I am most interested in fitness, I am a regular visitor to the gym and I learn 
+                        Korean language with the aim of living in Korea. Other hobbies are reading books, watching Netflix and hanging 
+                        out with friends. </p> 
+                        
+                </div>
+              </div>
+            </div>
+          </div><!-- End .content-->
+
+          
+
+    </div>
+      {% endblock %}
+    </footer> 
+    </body>
+
+    
